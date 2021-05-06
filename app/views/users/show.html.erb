@@ -6,7 +6,10 @@
 
 		<section class="user-section">
 			<h2><%= "Name: #{@user.name}" %></h2>
-
+			<div>
+            <%= gravatar_for @user %>
+          </div>
+				<br/>
 			<%= friend_button(current_user, @user) %>
 
 			<article class="timeline">
