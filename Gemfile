@@ -38,28 +38,27 @@ gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'devise'
+gem 'faker', '~> 2.16'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'capybara'
-  gem 'database_cleaner'
-  # gem 'factory_girl_rails', '~> 4.9'
-  gem 'faker', '~> 2.17'
-  gem 'rails-controller-testing'
-  gem 'rspec-rails', '~> 5.0', '>= 5.0.1'
-  gem 'selenium-webdriver'
+  gem 'factory_bot_rails', '~> 6.1'
+  gem 'rubocop-rails', '~> 2.9', '>= 2.9.1'
+  # gem 'rails-controller-testing'
   gem 'shoulda-matchers'
-  gem 'webdrivers'
+  gem 'sqlite3', '~> 1.4', '>= 1.4.2'
 end
 
 group :test do
   # Guard allows auto restart
-  gem 'guard-minitest', '~> 2.4', '>= 2.4.6'
-  gem 'minitest', '~> 5.14', '>= 5.14.4'
-  gem 'minitest-reporters', '~> 1.4', '>= 1.4.3'
+  gem 'capybara', '>= 3.26'
+  gem 'database_cleaner'
+  gem 'rspec-rails', '~> 4.0', '>= 4.0.2'
+  gem 'selenium-webdriver'
   gem 'simplecov', require: false
   gem 'simplecov-rcov'
+  gem 'webdrivers'
 end
 
 group :development do
