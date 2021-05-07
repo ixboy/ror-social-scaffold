@@ -9,4 +9,18 @@ class User < ApplicationRecord
   has_many :posts
   has_many :comments, dependent: :destroy
   has_many :likes, dependent: :destroy
+
+  has_many :friendships
+  has_many :accepted_friendships,
+           -> { where status: 'accepted' },
+           class_name: 'Friendship'
+  has_many :requested_friendships,
+           -> { where status: 'requested' },
+           class_name: 'Friendship'
+  has_many :pending_friendships,
+           -> { where status: 'pending' },
+           class_name: 'Friendship'
+  has_many :friends, through: :accepted_friendships
+  has_many :requested_friends, through: :requested_friendships, source: :friend
+  has_many :pending_friends, through: :pending_friendships, source: :friend
 end

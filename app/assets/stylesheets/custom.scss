@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap");
 
-$primary-color-dark: #689f38;
+$primary-color-dark: #0975B9;
 $primary-color: #8bc34a;
 $primary-color-light: #dcedc8;
 $primary-color-text: #212121;
@@ -287,7 +287,7 @@ form {
 
   .profile-link {
     font-size: 0.8em;
-    margin: 0 0 8px 0;
+    margin: 0 0 10px 0;
     color: $primary-color-dark;
   }
 }
@@ -346,4 +346,52 @@ form {
   .user-section {
     width: 50%;
   }
+
+
+  body{
+    background-color: #f8f9fa!important
+  }
+
+  .p-4 {
+    padding: 1.5rem!important;
+}
+.mb-0, .my-0 {
+    margin-bottom: 0!important;
+}
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}   
+
+
+/* user-dashboard-info-box */
+.user-dashboard-info-box .candidates-list .thumb {
+  margin-right: 20px;
+}
+.user-dashboard-info-box .candidates-list .thumb img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.user-dashboard-info-box .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.user-dashboard-info-box .candidates-list td {
+  vertical-align: middle;
+}
+
+.user-dashboard-info-box td li {
+  margin: 0 4px;
+}
+
 }
