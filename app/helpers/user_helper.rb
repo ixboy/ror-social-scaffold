@@ -6,7 +6,7 @@ module UserHelper
     else
       unless current_user.id == user.id
         link_to 'Send Friend Request', add_friend_path(user), method: :post,
-                                                              class: 'btn btn-primary'
+                                                              class: 'btn btn-dark'
       end
     end
   end

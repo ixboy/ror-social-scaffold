@@ -1,10 +1,44 @@
-<main class="main">
-<li>
-  Name: <%= user.name %>
-  <span class="profile-link">
-    <%= link_to 'See Profile',  user_path(user), class:"btn btn-primary btn-xs" %>
-			<%= friend_button(current_user, user)%>
+<div class="container mt-3 mb-4">
+<div class="col-lg-9 mt-4 mt-lg-0">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="user-dashboard-info-box table-responsive mb-0 bg-white p-4 shadow-sm">
+          <table class="table manage-candidates-top mb-0">
+            <thead>
+              <tr>
+                <th>
+                        <%= gravatar_for user %> 
+                </th>
+                <th>
+              
+                <ul class="list-unstyled mb-0 d-flex justify-content-end">
+                    <li>
+                      <%= link_to 'See Profile',  user_path(user), class:"btn btn-dark btn-xs" %>
+                    </li>
+                </ul>
+                </th>
 
-  </span>
-</li>
-</main>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="candidates-list">
+                <td class="title">
+                  <div class="thumb">
+                            <%= link_to user.name, user_path(user), class:'fs-5 fw-bolder' %>
+                  </div>
+                </td>
+                <td>
+                  <ul class="list-unstyled mb-0 d-flex justify-content-end">
+                    <li>
+			                <%= friend_button(current_user, user)%>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
