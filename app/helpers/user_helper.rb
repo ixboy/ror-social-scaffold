@@ -12,13 +12,12 @@ module UserHelper
   end
 
   def friendship_table(my_friends, requested_friends, current_user, user)
-    if current_user.id == user.id && my_friends.count.positive? || requested_friends.count.positive?
-      render 'shared/myfriends'
-    elsif current_user.id == user.id && !my_friends.count.positive? && !requested_friends.count.positive?
-      content_tag :p, "You don't have any friends yet. make some friends.", style: 'align = center;', class: 'lead'
-
-    else
+    if current_user.id != user.id
       ''
+    elsif !my_friends.count.positive? && !requested_friends.count.positive?
+      content_tag :p, "You don't have any friends yet. make some friends.", style: 'align = center;', class: 'lead'
+    else
+      render 'shared/myfriends'
     end
   end
 end
