@@ -1,6 +1,8 @@
 # Scaffold for social media app with Ruby on Rails
 
-> This repo includes intial code for social media app with basic styling. Its purpose is to be a starting point for Microverse students.
+> In this project I built a Social Media application. You can sign up with and email and password and then create posts, add other user as friends, read the post of your friends, coment and give them a like.
+
+<!-- ![](docs/) -->
 
 ## Built With
 
@@ -35,6 +37,7 @@ Setup database with:
 ```
    rails db:create
    rails db:migrate
+   rails db:seed
 ```
 
 ### Github Actions
@@ -63,21 +66,26 @@ Open `http://localhost:3000/` in your browser.
     rpsec --format documentation
 ```
 
-> Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
-
 ### Deployment
 
-TBA
+Deployed with Heroku
 
-## Authors
+[Live Link](https://ancient-sierra-54683.herokuapp.com/users/sign_in)
 
-TBA
+## Author
+
+👤 **Iyunda Ismael Antonio**
+
+- GitHub: [@ixboy](https://github.com/ixboy)
+- Twitter: [@ismaelixboy](https://twitter.com/ismaelixboy)
+- LinkedIn: [ismael-antonio](https://www.linkedin.com/in/ismaelantonio/)
+
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the issues page.
 
 ## Show your support
 
@@ -85,9 +93,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-TBA
+- ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 ## 📝 License
 
-TBA
-
+- This project is [MIT](./LICENSE) licensed.
