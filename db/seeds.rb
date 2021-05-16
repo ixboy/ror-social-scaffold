@@ -7,11 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 require 'faker'
-require 'database_cleaner'
+# require 'database_cleaner'
 
 DatabaseCleaner.clean_with(:truncation)
 
-# User.destroy_all
+User.destroy_all
 15.times do
   User.create!(name: Faker::Name.unique.name[1..15],
                email: Faker::Internet.unique.email, password: '123456',
