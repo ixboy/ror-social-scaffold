@@ -9,11 +9,6 @@
 - Ruby v2.7.0
 - Ruby on Rails v5.2.4
 
-## Live Demo
-
-[Live Link](https://ancient-sierra-54683.herokuapp.com/users/sign_in)
-
-
 
 ## Getting Started
 
