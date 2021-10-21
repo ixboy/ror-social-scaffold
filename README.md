@@ -1,6 +1,6 @@
 # Scaffold for social media app with Ruby on Rails
 
-> In this project I built a Social Media application. You can sign up with email and password and then create posts, add other user as friends, read the post of your friends, coment and give them a like.
+> In this project I forked a sample of a social media App from microverse and built on top of it a Social Media application. You can sign up with email and password and then create posts, add other user as friends, read the post of your friends, coment and give them a like.
 
 ![](docs/screenshot.png)
 
