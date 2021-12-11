@@ -1,6 +1,6 @@
 # Social media app with Ruby on Rails
 
-> In this project I forked a sample repo of a social media App (with no functionalities) from microverse and I built on top of it a Social Media application. You can sign up with an email and password and then create posts, add other users as friends, read the posts of your friends, comment and give them a like.
+> In this project I forked a sample repo of a social media App (with no functionalities at all) from microverse and I built on top of it a Social Media application. You can sign up with an email and password and then create posts, add other users as friends, read the posts of your friends, comment and give them a like.
 
 
 ![](docs/screenshot.png)
